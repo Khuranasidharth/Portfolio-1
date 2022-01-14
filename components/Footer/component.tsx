@@ -11,7 +11,7 @@ export const Footer: FC = () => {
           className="hover:opacity-80 transition-opacity"
           rel="noreferrer"
         >
-          Designed & Crafted by Pulkit © 2021
+          Designed & Crafted by Sidharth Khurana
         </a>
       </p>
     </Container>

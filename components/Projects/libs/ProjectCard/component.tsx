@@ -60,17 +60,6 @@ export const ProjectCard: FC<Props> = ({
         <div
           className={clsx("flex md:mb-4 mb-2", rightShift && "md:justify-end")}
         >
-          {technologies.map((tech, i) => (
-            <p
-              className={clsx(
-                "text-base dark:text-white-700 text-black-700",
-                i !== technologies.length - 1 && "mr-5 md:mr-8"
-              )}
-              key={tech}
-            >
-              {tech}
-            </p>
-          ))}
         </div>
         <div
           className={clsx("flex items-center", rightShift && "md:justify-end")}

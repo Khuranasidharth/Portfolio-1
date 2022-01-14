@@ -2,7 +2,7 @@ import { Container, MediaIcon } from "components";
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import React, { FC } from "react";
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaCloudDownloadAlt, FaLinkedin, FaBehance } from "react-icons/fa";
 
 import { HandWave } from "./libs/HandWave";
 import { HeroLink } from "./libs/HeroLink";
@@ -13,7 +13,7 @@ export const Hero: FC = () => {
   return (
     <Container className="pt-24 md:pt-32">
       <motion.img
-        src="/images/me.png"
+        src="/images/pp.jpeg"
         alt="me"
         className="border border-gray-700 rounded-full w-28 h-28 md:w-32 md:h-32 mt-36"
         variants={{
@@ -44,16 +44,16 @@ export const Hero: FC = () => {
       <p className="text-xl font-bold tracking-normal md:text-3xl text-black-700 dark:text-white-700">
         {t("hero.p0")}
         <br />
-        {t("hero.p1")} <HeroLink title="Infosys" href="https://infosys.com" />
+        {t("hero.p1")} <HeroLink title="Extramarks Education" href="https://www.extramarks.com/" />
       </p>
       <div className="flex mt-8">
         <MediaIcon
-          icon={<FaGithub className="w-6 h-6 md:w-7 md:h-7" />}
+          icon={<FaCloudDownloadAlt className="w-6 h-6 md:w-7 md:h-7" />}
           href="https://github.com/conquerorpulkit"
           className="mr-4"
         />
         <MediaIcon
-          icon={<FaTelegram className="w-6 h-6 md:w-7 md:h-7" />}
+          icon={<FaBehance className="w-6 h-6 md:w-7 md:h-7" />}
           href="https://t.me/bushy_brow"
           className="mr-4"
         />

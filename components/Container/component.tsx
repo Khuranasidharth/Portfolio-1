@@ -5,7 +5,7 @@ import { Props } from "./props";
 
 export const Container: FC<Props> = ({ className, children }: Props) => {
   return (
-    <div className={clsx("px-4 mx-auto max-w-screen-md", className)}>
+    <div className={clsx("px-3 mx-auto max-w-4xl", className)}>
       {children}
     </div>
   );

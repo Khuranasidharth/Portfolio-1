@@ -1,40 +1,44 @@
 import { motion } from "framer-motion";
-import React, { cloneElement, FC } from "react";
+import React, { FC } from "react";
 
 import { Props } from "./props";
 
 export const Skill: FC<Props> = ({
-  name,
-  icon,
-  href,
-  controls,
-  custom,
+    name,
+    href,
+    controls,
+    custom,
 }: Props) => {
-  return (
-    <motion.a
-      className="block pt-3 pb-2 text-center dark:bg-gray-900 rounded-md bg-whiteTheme"
-      style={{
-        boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.10)",
-      }}
-      target="_blank"
-      href={href}
-      whileHover="hover"
-      initial="initial"
-      variants={{
-        initial: {
-          opacity: 0,
-        },
-        hover: {
-          y: -3,
-        },
-      }}
-      animate={controls}
-      custom={custom}
-    >
-      {cloneElement(icon, { className: "mx-auto w-9 h-9" })}
-      <p className="mt-2 text-base font-medium text-black-700 dark:text-white-700">
-        {name}
-      </p>
-    </motion.a>
-  );
+    return (
+        <motion.a
+            className="block border-2 border-gray-800 pt-2 pb-2 text-center dark:rounded-md bg-whiteTheme"
+            style={{
+                borderRadius: "2px",
+                opacity: 1,
+            }}
+            target="_blank"
+            href={href}
+            whileHover="hover"
+            initial="initial"
+            variants={{
+                initial: {
+                    opacity: 0,
+                }
+            }}
+            animate={controls}
+            custom={custom}
+        >
+            <motion.p
+                className="text-lg vertical-align: middle font-medium text-black-700 md:text-base hover:underline dark:text-white-900"
+                whileHover="hover"
+                variants={{
+                    hover: {
+                        fontWeight: "bold"
+                    }
+                }}
+            >
+                {name}
+            </motion.p>
+        </motion.a>
+    );
 };

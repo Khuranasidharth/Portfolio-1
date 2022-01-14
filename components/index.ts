@@ -10,4 +10,5 @@ export * from "./Logo";
 export * from "./MediaIcon";
 export * from "./Projects";
 export * from "./Section";
+export * from "./Certifications";
 export * from "./Skills";

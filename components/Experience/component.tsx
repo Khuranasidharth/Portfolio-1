@@ -16,19 +16,34 @@ export const Experience: FC = () => {
   const experience = useMemo(
     () => [
       {
-        title: "System Engineer",
-        place: "Infosys, Banglore",
-        date: "Mar 2021 - Present",
+        title: "UI/UX designer",
+        place: "Extramarks Education, Noida",
+        date: "From 2021 - Present",
       },
       {
-        title: "Web Developer",
-        place: "Hounding Infosec Pvt Ltd, Remote",
-        date: "Jan 2020 - Mar 2021",
+        title: "Web and UI/UX designer",
+        place: "Panaesha Capital, Remote",
+        date: "From 2020 - Mar 2021",
       },
       {
-        title: "SWE Intern",
-        place: "InternNexus, New Delhi",
-        date: "Jul 2019 - Jan 2020",
+        title: "Graphic Design",
+        place: "ShowBox (Epic TV), New Delhi",
+        date: "Intern 2018",
+      },
+      {
+        title: "Graphic/Motion Design",
+        place: "Behind the screen, New Delhi",
+        date: "From 2017 - 2020",
+      },
+      {
+        title: "Video Editor, Graphic and UI/UX design",
+        place: "Sankalp NGO, New Delhi",
+        date: "2020",
+      },
+      {
+        title: "Founder",
+        place: "MartiniShot Studios, New Delhi",
+        date: "From 2018",
       },
     ],
     []

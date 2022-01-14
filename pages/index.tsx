@@ -6,6 +6,7 @@ import {
   Header,
   Hero,
   Projects,
+  Certifications,
   Skills,
 } from "components";
 import { motion } from "framer-motion";
@@ -55,6 +56,7 @@ const IndexPage = () => {
         <Header />
         <Hero />
         <Projects />
+        <Certifications />
         <Skills />
         <Experience />
         <Contact />
